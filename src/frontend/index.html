@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Simple To Do</title>
 </head>
 <body>
-    <h1 class="title">Hello, World.</h1>
+    <div class="task-container">
+        <div class="text-display" id="textDisplay" contenteditable="false">Test</div>
+        <div class="button-container">
+            <div class="done-container">
+                <button class="done-button" onclick="doneTask()">Done</button>
+            </div>
+            <div class="edit-delete-container">
+                <button class="edit-button" onclick="editText()">Edit</button>
+                <button class="delete-button" onclick="deleteTask()">Delete</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
